@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ah.sensorsaccess">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SensorsActivity" android:label="Sensor list"/>
+
+        <activity android:name=".SensorActivities.SensAccelerometerActivity" android:label="Accelerometer"/>
+        <activity android:name=".SensorActivities.SensGyroscopeActivity" android:label="Gyroscope"/>
+        <activity android:name=".SensorActivities.SensLightActivity" android:label="Light sensor"/>
+        <activity android:name=".SensorActivities.SensLinearAccelerometerActivity" android:label="Linear accelerometer"/>
+        <activity android:name=".SensorActivities.SensMagnetometerActivity" android:label="Magnetometer"/>
+        <activity android:name=".SensorActivities.SensOrientationActivity" android:label="Orientation sensor"/>
+        <activity android:name=".SensorActivities.SensProximityActivity" android:label="Proximity sensor"/>
+        <activity android:name=".SensorActivities.SensRotationVectorActivity" android:label="Rotation vector sensor"/>
+        <activity android:name=".SensorActivities.SensSignificantMotionActivity" android:label="Significant motion sensor"/>
+
+    </application>
+
+</manifest>
