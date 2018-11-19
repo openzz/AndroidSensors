@@ -115,21 +115,21 @@ public class SensAccelerometerActivity extends AppCompatActivity implements Sens
 
         x.add(event.values[0]);
         if(x.size()>1000){
-            x.remove(0);
+            //x.remove(0);
         }
         //seriesX.appendData(new DataPoint(time, event.values[0]), true, 100);
         xView.setText(String.valueOf(event.values[0]));
 
         y.add(event.values[1]);
         if(y.size()>1000){
-            y.remove(0);
+            //y.remove(0);
         }
         //seriesY.appendData(new DataPoint(time, event.values[1]), true, 100);
         yView.setText(String.valueOf(event.values[1]));
 
         z.add(event.values[2]);
         if(z.size()>1000){
-            z.remove(0);
+            //z.remove(0);
         }
         //seriesZ.appendData(new DataPoint(time, event.values[2]), true, 100);
         zView.setText(String.valueOf(event.values[2]));

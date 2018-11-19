@@ -34,7 +34,7 @@ public class LinkedSet<E> extends AbstractSet<E> {
 
     @Override
     public boolean add(E e){
-        LinkedElement<E> element = map.putIfAbsent(e, placeholder);
+        LinkedElement<E> element = map.put(e, placeholder);
 
         if(element != null){
             return false;
@@ -116,7 +116,7 @@ public class LinkedSet<E> extends AbstractSet<E> {
 
             return n.value;
         }
-
+/*
         @Override
         public void remove(){
             if (current == null){
@@ -129,5 +129,6 @@ public class LinkedSet<E> extends AbstractSet<E> {
                 throw new NoSuchElementException();
             }
         }
+        */
     }
 }
