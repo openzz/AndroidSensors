@@ -128,7 +128,6 @@ public class LinkedSet<E> extends AbstractSet<E> {
             }else {
                 throw new NoSuchElementException();
             }
-            //
         }
     }
 }
